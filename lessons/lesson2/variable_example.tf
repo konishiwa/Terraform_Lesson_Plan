@@ -18,11 +18,13 @@ variable "my-first-variable" {
 /*
 Variable Types:
 Base/Primitive Types (single type value): string, number, bool
+Dynamic Type: any
+   any is a placeholder for a primitive type, determined at runtime
 Complex Types (multiple values in a single value): list, set, map, object, tuple
 Complex Types - Collections: multiple values of one primitive type grouped together
   list(type), map(type), set(type)
 Complex Types - Structural: allow multiple values of different primitive types to be grouped together
-
+  object(type), tuple(type), set(type)
 */
 
 //Variable example 2
@@ -46,8 +48,22 @@ variable "ports" {
     }]
 }
 
+//Example dynamic any type
+variable "dynamic" {
+  type = list(any)
+  default = [1,4,5]
+}
+
 //Example Collection Type:
 variable "studying" {
   type = list(string)
   default =  ["terraform", "today"]
+}
+
+//Example Structural Type:
+variable "teacher" {
+  type = object({
+    name = string
+    age  = number
+  })
 }
