@@ -4,7 +4,7 @@ write <-> plan -> deploy -> (optional) destory
 
 1. terraform init: The first command you should run
                    initializes terraform repository
-                   downloads modules and plugins
+                   downloads modules and plugins (including providers)
                    sets up the backend (where Terraform state file is stored).
 2. terraform plan: Review changes to your code, read-only (no actual changes)
                    shows a "plan" of all resources that will be created
@@ -15,4 +15,10 @@ write <-> plan -> deploy -> (optional) destory
 4. terraform destroy: destroys all created resources in the tf file
                       helps you clean out the deployment uniformly
                       non-reversible!
+*/
+
+/*
+Terraform Best Practices
+
+- Pin down versions - new changes can break the code!
 */
