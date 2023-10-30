@@ -10,6 +10,7 @@ The infrastructure for the project is as defined below.
 ```~~~~~~~~
 ├── README.md <-------------- This guide to the project.
 ├── terraform <------------ Contains terraform code 
+├── assignments <------------ Contains Terraform Assignments
 ├── lessons <------------ Contains notes about Terraform
 └──imgs <------------------ images for README.md
 ```
