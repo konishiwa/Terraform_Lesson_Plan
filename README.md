@@ -10,7 +10,7 @@ The infrastructure for the project is as defined below.
 ```~~~~~~~~
 ├── README.md <-------------- This guide to the project.
 ├── terraform <------------ Contains terraform code 
-├── notes <------------ Contains notes about Terraform
+├── lessons <------------ Contains notes about Terraform
 └──imgs <------------------ images for README.md
 ```
 
@@ -18,6 +18,9 @@ The infrastructure for the project is as defined below.
 
 - Terraform
   - https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli
+  - 4 Ways to Download Terraform: Manual installation, Homebrew (for MacOS), Chocolatey (Windows), Linux (add Hashicorp to Linux distribution)
+- Terraform Autocomplete   
+  -  `terraform -install-autocomplete`: offers tab completion for your terminal.
 
 ## Running the Project
 - Add your json service account key to the root directory
